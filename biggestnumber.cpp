@@ -1,23 +1,31 @@
-//Author:
-#include<iostream>
 
+//Author:lyell schroeder
+#include<iostream>
+using namespace std;
 int main()
 {
   //declare variables here
-
-  std::cout<<"Please enter a whole number:\n";
+int first;
+int second;
+int biggest;
+ cout<<"Please enter a whole number:\n";
   //get first input using std::cin>>
+  cin>> first;
 
-  std::cout<<"Please enter another whole number:\n";
+  cout<<"Please enter another whole number:\n";
   //get second input using std::cin>> again with a second variable
-
+  cin >> second;
   //determine if first or second is bigger and store that in a third variable
-
-
-  std::cout<<"Of those two numbers, the biggest is: ";
+	if (first>second){
+		biggest = first;
+	}
+	else{
+		biggest= second;
+	}
+  cout<<"Of those two numbers, the biggest is: ";
   //print out the variable representing the biggest number
-
-  std::cout<<std::endl<<"Thank you for playing.\n";
+cout << biggest;
+  cout<<std::endl<<"Thank you for playing.\n";
   
   return 0;
 }
